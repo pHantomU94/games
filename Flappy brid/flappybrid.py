@@ -44,6 +44,8 @@ if __name__ == "__main__":
             if event.type == pg.QUIT:  # quit
                 pg.display.quit()
                 sys.exit(0)
+            if event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
+                pass
         screen.fill(color)
         screen.blit(background,(0,0))
         brid.bridUpdate()
